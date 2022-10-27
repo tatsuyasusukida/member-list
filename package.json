@@ -1,0 +1,21 @@
+{
+  "name": "member-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mustache": "^4.2.1",
+    "@types/node": "^18.11.7",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}

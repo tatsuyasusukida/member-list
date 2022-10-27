@@ -1,0 +1,64 @@
+@page {
+  margin: 15mm 15mm 15mm 15mm;
+}
+
+html {
+  font-size: 10.5pt;
+  font-family: serif;
+}
+
+h1 {
+  font-size: 18pt;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 14pt;
+  margin: 0 0 1rem;
+}
+
+h3 {
+  font-size: 12pt;
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+li {
+  display: inline;
+}
+
+li::before {
+  content: "／";
+}
+
+li:first-child:before {
+  content: "";
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 1pt solid #cccccc;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.col {
+  flex: 1;
+}
+
+.col.is-image {
+  flex: 0.18;
+}

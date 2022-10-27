@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メンバー紹介</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>メンバー紹介</h1>
+
+    {{#members}}
+      <section>
+        <h2>{{name}} | {{kana}}</h2>
+        <div class="row">
+          <div class="col is-image">
+            <img src="img/{{image}}" alt="">
+          </div>
+          <div class="col">
+            <p>{{text}}</p>
+            <section>
+              <h3>{{header}}</h3>
+              <ul>
+                {{#items}}
+                  <li>{{line}}</li>
+                {{/items}}
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+    {{/members}}
+  </body>
+</html>
